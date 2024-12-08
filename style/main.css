@@ -1,3 +1,6 @@
+body{
+    margin: 0px;
+}
 #first_grid{
     display: grid;
     grid-template-columns: repeat(7, auto);
@@ -20,7 +23,6 @@ body{
     color: white;
     padding: 0px;
     border: 0px;
-    
 }
 body p {
     font-size: 15px;
@@ -28,7 +30,8 @@ body p {
 .intro_vid{
     width: 500px;
     height: auto;
-    float: right;
+    
+
 }
 footer{
     background-color:  rgb(202 220 252);
@@ -36,8 +39,6 @@ footer{
     display: flex;
     width: 100%;
 }
-
-
 footer p{
     border-style: solid;
     padding: 10px;
@@ -60,7 +61,7 @@ footer p{
 .clearimg:hover{
     width: 250px;
 }
-li {
+.listone li {
     text-decoration: none;
     color: white;
 }
@@ -68,5 +69,18 @@ li {
     body {
       margin: 0 auto;
       width: 790px;
+    }
+    .intro_vid{
+        width: 300px;
+        height: auto;
+        float: right;
+    }
+
+  
+}
+@media screen and (min-width: 560px)  and (max-width:789){
+    .intro_vid{
+        width: 2vw;
+        height: auto;
     }
 }
