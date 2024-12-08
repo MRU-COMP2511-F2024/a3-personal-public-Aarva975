@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePortfolio - Abivansh Arva</title>
+    <link rel="stylesheet" href="style/main.css">
+    <nav>
+        <div id="first_grid">
+            <div id="nav_grid" class="navitem1">Abivansh Arva</div>
+            <div id="nav_grid" class="navitem2"><a href="index.html">Home</a></div>
+        </div>
+        <p> 2nd Year Bachelor Of Computer Info Systems </p>
+    </nav>
+    <hr />
+</head>
+
+<body>
+    <div id="TestDrive">
+        <form id="form_one" method="post" action="mailto:aarva975@mtroyal.ca">
+            <fieldset class="PersonalInfo">
+                <legend>Connect with Me</legend>
+                <dl>
+                    <dt><label for="Salutation">Salutation</label></dt>
+                    <dd>
+                        <select name="Salutation" id="Salutation" size="1">
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                            <option>Other</option>
+                        </select>
+                    </dd>
+
+                    <dt><label for="FirstName">First Name*</label></dt>
+                    <dd><input type="text" name="FirstName" id="FirstName" size="25" maxlength="100" required></dd>
+
+                    <dt><label for="LastName">Last Name*</label></dt>
+                    <dd><input type="text" name="LastName" id="LastName" size="25" maxlength="100" required></dd>
+
+                    <dt><label for="phone">Phone*</label></dt>
+                    <dd><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="xxx-xxx-xxxx" required></dd>
+
+                    <dt><label for="Email">Email*</label></dt>
+                    <dd>
+                        <input type="email" name="Email" id="Email" placeholder="username@mtroyal.ca" pattern=".+@"
+                            required><br>
+                    </dd>
+
+                    <dt><label for="Comments">Special Comments:</label></dt>
+                    <dd><textarea id="Comments" name="Comments" cols="40" placeholder="Please Comment here"></textarea>
+                    </dd>
+                </dl>
+                <input type="submit" value="Submit" formnovalidate>
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+</body>
